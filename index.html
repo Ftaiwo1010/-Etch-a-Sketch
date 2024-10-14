@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+
+
+      body {
+        background-color: burlywood;
+        min-height: 100vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      h1 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 50px;
+
+      }
+
+      .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 130px;
+        margin-bottom: 40px;
+      }
+
+      .sketch-text-wrapper {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 20px;
+      }
+
+      .sketch-text-wrapper button {
+         border: none;
+         border-radius: 5px;
+         font-size: 18px;
+         padding: 12px 15px;
+         background-color: brown;
+         color: white;
+         cursor: pointer;
+      }
+
+      .sketch-text-wrapper input[type=color] {
+         cursor: pointer;
+      }
+
+
+      .sketch-text-wrapper label {
+         display: flex;
+         align-items: center;
+         gap: 5px;
+         font-size: 18px;
+         font-weight: bold;
+      }
+
+      .pad-container {
+         background-color: white;
+         display: flex;
+         flex-wrap: wrap;
+      }
+
+      .square {
+         border: 1px solid rgb(96, 95, 95);
+         border-collapse: collapse;
+         cursor:crosshair;
+         display: flex;
+         gap: 1rem;
+      }
+    </style>
+</head>
+<body>
+  <h1>Etch a Sketch</h1>
+  <div class="container"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
